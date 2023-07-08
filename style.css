@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+   
+   /* Style the navbar */
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        color: bisque;
+      }
+      
+      /* Style the navbar links */
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      
+      /* Change color on hover */
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+          /* Style the logo */
+          .navbar img {
+            float: left;
+            height: 50px;
+            padding: 5px;
+            position: relative;
+            z-index: 2; /* Higher z-index to keep logo above carousel */
+          }
+
+
+      .carousel .prev,
+      .carousel .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+      }
+      
+      .carousel .prev {
+        left: 10px;
+      }
+      
+      .carousel .next {
+        right: 10px;
+      }
+
+/* Style the carousel images */
+.carousel img {
+    display: none;
+    width: 100%;
+    height: max-content;
+    object-fit: contain;
+   
+  }
+
+
+     /* Style the carousel container */
+     .carousel {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: 350px; /* Set the desired height */
+        margin: 0 auto;
+        overflow: hidden;
+        color: bisque;
+      }
+
+      #carousel-image-1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        
+      }
+
+      
+
+      .services {
+        text-align: center;
+        color: bisque;
+        
+      }
+      
+      .services h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .services p {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+      
+      .services ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 40px;
+      }
+      
+      .services li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      
+      .services li:last-child {
+        margin-right: 0;
+      }
+
+      .services img{
+        height:100px;
+      }
+
+
+      #contactForm{
+        max-width: 35%;
+        display: grid;
+        align-items: center;
+        margin: auto;
+        
+        padding-top:10%;
+        color: bisque;
+        
+        
+
+    }
+    textarea{
+     height: 10rem;
+        
+
+    }
+
+    #contact{
+        margin-top: 2rem;
+        color:bisque;
+        text-align: center;
+    }
+
+    #unordered-list{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    #about{
+        color: bisque;
+        text-align: center;
+        
+       
+    }
