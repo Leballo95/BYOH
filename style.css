@@ -2,6 +2,7 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
     
 }
    
@@ -161,6 +162,48 @@
     #about{
         color: bisque;
         text-align: center;
+       
         
        
+    }
+
+    #about-us-paragraphs{
+        display: block;
+        margin-right: 45%;
+        background-color: red;
+        height:fit-content
+
+    }
+    
+    #about-us-container{
+       position: relative;
+       
+
+    }
+
+    #about-us-container img{ 
+        max-width: 100%;
+        height:auto;
+    }
+
+    .text{
+        position: absolute;
+        bottom: 35px;
+        
+        color: white;
+        background-color: rgba(20, 20, 20, 0.8);
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0 10px;
+  
+
+    }
+
+
+    .learn-more{
+      border-radius: 25%;
+      
+    }
+
+    .learn-more:hover{
+      color: cornflowerblue;
     }
