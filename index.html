@@ -3,103 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bring Your Own Hands</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>LM Kitchens</title>
 </head>
 <body>
-    <div class="navbar">
-        <img src="BYOH.png" alt="Logo">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="#blog">Blog</a>
-      </div>
+  <!---------------------------------------Mobile header and Nav section-->
+    <header class="container mobile-content">
+        <div id="mobile-header-icons" >
+            <img class="logo" src="./Assets/images/LOGO_FULL-removebg-preview.png" alt="" srcset="">
+            
+            <div id="socials">
+                <a href="https://www.instagram.com/mokoenaskitchens/" target="_blank"><img class="logo"  src="./Assets/icons/instagram-brands-solid.svg" alt="" srcset=""></a>
+            </div>
+            
+        </div>
+        
+    
+    </header>
 
-      <div class="carousel" id="carousel">
-        <img src="./pexels-rostislav-uzunov-5011647.jpg" alt="Image 1" id="carousel-image-1">
-        <img src="./pexels-pixabay-73871.jpg" alt="Image 2">
-        <img src="./pexels-nothing-ahead-3729557.jpg" alt="Image 3">
+
+    <!---------------------Desktop Nav and Header section-------------------------->
+    <header class="desktop-content container ">
+        <div id="desktop-header-content">
+            <div >
+                <img class="logo" src="./Assets/images/LOGO_FULL-removebg-preview.png" alt="" srcset="">  
+            </div>
+            <div id="links-desktop">
+              
+              <a id="social-desktop" href="https://instagram.com/mokoenaskitchens/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <nav>
+            
+            <!-- <ul class="desktop-content nav-ul" id="nav-ul">
+              <li><a href="#about-section">About</a></li>
+              <li><a href="#gallery-container">Gallery</a></li>
+              
+            </ul> -->
+          </nav>
+            </div>
+            
+            <!-- <ul class="desktop-content nav-ul" id="nav-ul-desktop">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Cupboards</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul> -->
+        </div>
+       <!--------------------------Desktop video section with overlay text and contact button------------------- -->
+        <div class="video-container">
+          <video autoplay muted loop>
+            <source src="./Assets/Capacity_display_overlay.mp4" type="video/mp4">
+            <source src="your-video.webm" type="video/webm">  Your browser does not support the video tag.
+          </video>
+           <div class="video-content">
+            <div><img src="./Assets/images/logo-small-removebg-preview.png" alt="" srcset=""></div>
+            <h3>From outdated to outstanding</h3>
+            <p>Kitchen Remodeling & Built-in Cupboards, Crafted for You</p>
+              <button id="video-container-button" type="button"><a href="mailto:info@lmmokoenaskitchen.co.za">Contact</a></button>
+          </div>
+        </div>
+    </header>
+
+    <!-----Mobile Hero Section----------------------------------------------->
+    <section class="hero">
+        
+        <div class="container mobile-content">
+            <img class="hero-image" src="./Assets/images/hero_kitchen_overlay-edited.png" alt="" srcset="">
+            <div id="hero-text">
+                <h5>We make spaces useful and beautiful</h5>
+                <p>Looking to remodel your kitchen?We have the expertise to bring your dream to life</p>
+                <div id="hero-buttons-mobile">
+                    <button class="hero-button" type="button" ><a href="mailto:info@lmmokoenaskitchen.co.za">Contact</a></button>
+                    <button id="about-us-button" class="hero-button" type="button" ><a href="about-mobile.html">About Us</a></button>
+                </div>
+                
+            </div>
+            
+        </div>  
+    </section>
+
+    <!----Mobile Gallery section------------------------------------>
+    <section class="mobile-content" id="gallery-container">
+
+        <h5 class="gallery-heading">Take a look at some of our work</h5>
+        <p id="gallery-para">Everything we create is a testament to our commitment to quality craftsmanship. Explore our gallery and discover the difference that attention to detail makes.</p>
+        <div class="gallery ">
+        <div class="grid-item"><img src="./Assets/images/cup1.jpg" alt="" srcset=""></div>
+        <div class="grid-item"><img src="./Assets/images/kitchen9.jpg" alt="" srcset=""></div>
+        <div class="grid-item"><img src="./Assets/images/cup7.jpg" alt="" srcset=""></div>
+        <div class="grid-item"><img src="./Assets/images/kitchen1.jpg" alt="" srcset=""></div>
+        <div class="grid-item"><img src="./Assets/images/kitchen2.jpg" alt="" srcset=""></div>
+        <div class="grid-item"><img src="./Assets/images/kitchen3.jpg" alt="" srcset=""></div>
+        <div class="grid-item"><img src="./Assets/images/cup4.jpg" alt="" srcset=""></div>
+        <div class="grid-item"><img src="./Assets/images/cup5.jpg" alt="" srcset=""></div>
+        <div class="grid-item"><img src="./Assets/images/cup6.jpg" alt="" srcset=""></div>
+    </div>
+    </section>
+    <div id="myModal" class="modal mobile-content" style="display: none;">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modal-image" id="modal-img" src="" alt="Modal Image">
+        </div>
+    
+    </div>
+
+     <!-----Gallery desktop------------------------------------------->
+   
+     <section class="desktop-content" id="gallery-container">
+
+      <h5 class="gallery-heading">Take a look at some of our work</h5>
+      <p id="gallery-para">Everything we create is a testament to our commitment to quality craftsmanship. Explore our gallery and discover the difference that attention to detail makes.</p>
+      <div class="gallery ">
+      <div class="grid-item"><img src="./Assets/images/cup1.jpg" alt="" srcset=""></div>
+      <div class="grid-item"><img src="./Assets/images/kitchen9.jpg" alt="" srcset=""></div>
+      <div class="grid-item"><img src="./Assets/images/cup7.jpg" alt="" srcset=""></div>
+      <div class="grid-item"><img src="./Assets/images/kitchen1.jpg" alt="" srcset=""></div>
+      <div class="grid-item"><img src="./Assets/images/kitchen2.jpg" alt="" srcset=""></div>
+      <div class="grid-item"><img src="./Assets/images/kitchen3.jpg" alt="" srcset=""></div>
+      <div class="grid-item"><img src="./Assets/images/cup4.jpg" alt="" srcset=""></div>
+      <div class="grid-item"><img src="./Assets/images/cup5.jpg" alt="" srcset=""></div>
+      <div class="grid-item"><img src="./Assets/images/cup6.jpg" alt="" srcset=""></div>
+  </div>
+  </section>
+  <div id="myModal" class="modal mobile-content" style="display: none;">
+
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <img class="modal-image" id="modal-img" src="" alt="Modal Image">
+      </div>
+  
+  </div>
+        
+
+        
+        
+        <!----------------------------Mobile contact form section--------------------------------------->
+    <!-- <section class="mobile-content">
+      
+        <div class="contact-form  ">
+            <h2>Contact Us</h2>
+            <form action="https://formsubmit.co/c4425f9f64bb15349dc5b25c4d9a218f" method="post" id="contactForm">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+        
+        </section> -->
+
+        <section class="desktop-content" id="about-section">
+          <div id="about-text" class="grid-item">
+              <h3>About Us</h3>
+              <p>Our company was formed in 2003, delivering high-quality work locally in the Mabopane area and beyond. We cater for diverse needs from kitchen units to built-in cupboards.</p>
+                <br>
+                <p>No matter how big or small your project, we give it our full attention. Our team consists of specialists in carpentry and furniture design, so whether you are looking for furniture, a fitted kitchen or wardrobe, our team will be able to accomodate you and your unique taste.</p>
+                <br>
+                <p>Armed with a wealth of experience and a history of diverse projects, we are well-placed to handle both domestic and commercial projects. We also offer cut and  edge services, with different boards in an assortment of colours</p>
+                <br>
+  
+          </div>
+          <div id="about-image-container" class="grid-item">
+            <img class="about-image" src="./Assets/images/team2.jpg" alt="" srcset="">
+            <img src="./Assets/images/team1.jpg" alt="" class="about-image">
+          </div>
+          
+              <div id="about-quote" class="grid-item">
+                  <img src="./Assets/images/logo-small-removebg-preview.png" alt="" srcset="">
+                  <h5>"A man who works with his hands and heart is an artist" -Unknown</h5>
+                </div>
+          
+      </section>
+
+      <section class="mobile-content" id="rent">
+        <div>
+          <h5>Looking for workshop space?</h5>
+        <p>We have rental units available. Contact us for more details</p>
+        </div>
+      
+        
+        <button class="hero-button" id="video-container-button" type="button"><a href="mailto:info@lmmokoenaskitchen.co.za">Contact</a></button>
        
         
-        <a class="prev" onclick="carouselPrev()">&#10094;</a>
-        <a class="next" onclick="carouselNext()">&#10095;</a>
-      </div>
-      
-      <section class="services" id="services">
-        <h2>Our Services</h2>
-        <p>We specialize in teaching STEM subjects to help students explore and excel in the fields of Science, Technology, Engineering, and Mathematics.</p>
-        
-        <ul id="unordered-list">
-          <li>
-            <img src="./pexels-pixabay-73910.jpg" alt="Service 1">
-            <h3>Robotics</h3>
-            <p>Learn to build and program robots, fostering creativity, problem-solving, and logical thinking.</p>
-            <button class="learn-more">Learn more</button>
-        </li>
-          
-          <li>
-            <img src="./pexels-pixabay-270366.jpg" alt="Service 2">
-            <h3>Coding</h3>
-            <p>Master coding languages and concepts, empowering students to create their own applications and websites.</p>
-            <button class="learn-more">Learn more</button>
-        </li>
-          
-          <li>
-            <img src="./pexels-pixabay-162553.jpg" alt="Service 3">
-            <h3>STEM Workshops</h3>
-            <p>Engage in hands-on workshops to explore various STEM topics and develop practical skills.</p>
-            <button class="learn-more">Learn more</button>
-        </li>
-          
-          <li>
-            <img src="./pexels-thisisengineering-3912480.jpg" alt="Service 4">
-            <h3>Science Experiments</h3>
-            <p>Experience exciting science experiments that make learning concepts fun and interactive.</p>
-            <button class="learn-more">Learn more</button>
-        </li>
-        </ul>
-        </section>
+      </section>
 
-
-        <section id="about">
-            <h1>About Us</h1>
-            <div id="about-us-container">
-                 <img src="./pexels-fauxels-3184398.jpg" alt="" srcset="" id="about-us-image"> 
-                 <div class="text">
-                    <p>At BYOH, we are passionate about revolutionizing STEM education and inspiring the next generation of innovators, problem-solvers, and critical thinkers.</p>
-    
-                    <p>With a vision to unlock the boundless potential within every student, we strive to provide exceptional learning experiences that go beyond traditional classroom teaching. Our programs are designed to empower students with the knowledge, skills, and confidence needed to succeed in a rapidly changing technological landscape.</p>
-                    
-                    <p>At the heart of our approach is a commitment to fostering creativity, curiosity, and a growth mindset. We believe that learning should be an immersive and interactive journey, where students are encouraged to explore, experiment, and collaborate.</p>
-                    
-                    <p>Our team of dedicated educators and industry professionals are passionate about igniting the spark of discovery in each student. With their expertise and guidance, we create engaging and hands-on experiences that bring STEM concepts to life, making learning enjoyable and meaningful.</p>
-                    
-                    <p>Whether it's through robotics, coding, engineering, or scientific exploration, we are dedicated to providing a stimulating environment where students can uncover their talents, develop critical skills, and cultivate a lifelong love for learning.</p>
-                    
-                    <p>Join us on this exciting journey as we empower the next generation of STEM leaders who will shape the future and make a positive impact on the world.</p>
-                  
-                 </div>
-        
-    </div> 
-            
-        </section>
-        
-        <section id="contact">
-            <h1>Contact us</h1>
-            <form id="contactForm" method="post" action="./submitForm.js">
-                <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea name="message" placeholder="Your Message" required></textarea>
-              
-              <button type="submit">Submit</button>
-               </form>
-        </section>
+        <!--------------------------Footer------------------------------------>
+        <footer>
+            <div class="footer-content">
+              <div id="desktop-contact-form" class=" contact-form footer-section ">
+                <h2>Contact Us</h2>
+                <form action="https://formsubmit.co/info@lmmokoenaskitchen.co.za" method="post" id="contactForm">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button  type="submit">Submit</button>
+                </form>
+              </div>
+                <div class="footer-section">
+                    <h3>Contact Details</h3>
+                    <p>Email: <a href="mailto:info@lmmokoenaskitchen.co.za">info@lmmokoenaskitchen.co.za</a></p>
+                    <p>Phone: <a href="tel:+27127014944">+27 12 701 4944</a></p>
+                    <br>
+                    <div class="social-media">
+                        <a href="https://facebook.com/lmmokoenasku/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        
+                        <a href="https://instagram.com/mokoenaskitchens/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Visit Us</h3>
+                    <div class="map-container">
+                        
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115233.82851243713!2d28.000898077704672!3d-25.503140773428253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1ebfcf3a207eb0d1%3A0x71a3226431390880!2s64%20ponelo%20pele%2C%20Mabopane%20Unit%20N%2C%20Pretoria%2C%200196!3m2!1d-25.5029821!2d28.0833169!5e0!3m2!1sen!2sza!4v1739241975592!5m2!1sen!2sza"allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <p>&copy; <span id="year"></span> LM Mokoena's Kitchen.All rights reserved.</p>
+            </div>
+        </footer>
 
 
 
-      
-
-    <script src="./index.js"></script>  
+   
+    <script src="./script.js"></script>
 </body>
 </html>
